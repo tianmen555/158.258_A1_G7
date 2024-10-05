@@ -202,13 +202,23 @@ nav > div {
 	text-align: center;
 	width: 100%;
 }  
-nav > div > button#release {  
+/*nav > div > button#release {  
 	width: 75px;
 	height: 25px;
 	margin-top: 10px;
 }
 nav > div > img {  
 	margin-top: 30px;
+}*/
+.release {
+	display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+	border: none;
+	padding: 10px 10px;
+	display: flex;
+	flex-direction: column; 
 }
 
 
