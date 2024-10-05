@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*Filename: journey_styles.css*/
+
+
+/* Application of a web font */
+@font-face {
+  font-family: D;
+  src: url('Playball-Regular.ttf');
+}
+@font-face {
+  font-family: cac;
+  src: url('Alkatra-VariableFont_wght.ttf');
+}
+
+
+/* Apply global styles */
+body {
+  color: #4e8531; 
+  background-color: white;
+}
+
+
+/* Style the header */
+header {
+  background: #4e8531;
+  color: #fff;
+  background-image: url('up2.png');
+}
+header .auth-button, .contact-link{
+   color: white;
+}
+header .nav{
+   background: rgba(78, 133, 49, 0.5);
+}
+header .nav a{
+   color: white;
+}
+
+
+/* Style the main content area */
+section#leftcol {
+  background: #e8e8e8;
+}
+
+section#leftcol p{
+   padding: 10px 20px;
+   margin: 10px auto;
+}
+section#leftcol aside.note1 ul li a {
+   color: #4e8531; 
+}
+
+
+.choose {  
+	background-color: #ffffff; /* 设置背景色为白色 */  
+	border: 1px solid #4e8531; /* 设置边框颜色为灰色，宽度为1px */  
+}
+
+.choose input[type="text"],  
+.choose input[type="date"] {  
+	border: 1px solid #4e8531; 
+}
+
+.choose button {  
+	background-color: #4CAF50; /* 假设你想要一个绿色的按钮 */  
+	color: white; /* 按钮文字颜色 */   
+}
+
+.choose button:hover {  
+	background-color: #3e6a2c; /* 按钮悬停时的背景色 */  
+}
+
+
+.note1 {
+   background-color: #f2d7bc; 
+}
+.event1 {
+   background-color: #2a2f33; 
+}
+
+section#leftcol aside.note2 ul li a {
+   color: #4e8531; 
+}
+ 
+.note2 {
+   background-color: #2a2f33; 
+}
+.event2 {
+   background-color: #f2d7bc; 
+}
+ 
+
+/* Style the aside area */
+section#rightcol { 
+  background: #bad399; 
+}
+
+blockquote {
+   color:white;
+}
+blockquote::before {
+   color: white;
+}
+blockquote::after {
+   color: white;
+}
+
+
+/* Style the navigation */
+nav a {
+   color:rgba(78, 133, 49, 0.5);
+}
+
+
+
+/* Style the footer */
+footer {
+   color: #fff;  
+   background:  rgba(55, 56, 58, 0.9);
+}

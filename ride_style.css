@@ -1,0 +1,85 @@
+@charset "UTF-8"; 
+
+/* Application of a web font */
+@font-face {
+  font-family: D;
+  src: url('Playball-Regular.ttf');
+}
+@font-face {
+  font-family: cac;
+  src: url('Alkatra-VariableFont_wght.ttf');
+}
+
+/* Apply global styles */
+body {
+  color: #4e8531;
+  background-color: white;
+}
+
+/* Style the header */
+header {
+  background: #4e8531;
+  color: #fff;
+  background-image: url('up.png');
+}
+header .auth-button, .contact-link{
+  color: white;
+}
+header .nav{
+  background: rgba(78, 133, 49, 0.5);
+}
+header .nav a{
+  color: white;
+}
+
+/* Style the main content area */
+section#leftcol {
+  background: #e8e8e8;
+}
+
+.input-container {  
+  background-color: #e8e8e8;
+  border: 1px solid #4e8531; 
+}  
+
+.button-container {    
+  background-color: #e8e8e8;
+  border: 1px solid #4e8531; 
+} 
+
+.input-container input {  
+  border: 1px solid #4e8531;
+}  
+  
+.button-container button {  
+  background-color: #4e8531;
+  color: #e7efc0;
+}   
+ 
+
+/* Style the aside area */
+section#rightcol {
+  background: #bad399;
+}
+
+blockquote {
+  color: #4e8531;
+}
+blockquote::before {
+  color: #4e8531;
+}
+blockquote::after {
+  color: #4e8531;
+}
+
+/* Style the navigation */
+nav a {
+  color: rgba(78, 133, 49, 0.5);
+}
+
+
+/* Style the footer */
+footer {
+  color: #e7efc0;
+  background:  rgba(55, 56, 58, 0.9);
+}
