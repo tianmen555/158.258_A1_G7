@@ -246,3 +246,70 @@ li, main, nav, ol, p, section, span, ul {
         grid-template-columns: 1fr;
     }
 }
+
+/* 设置body全局自适应 */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box; /* 保证padding不会影响布局 */
+}
+
+/* 调整container的宽高，使其更具自适应性 */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* 媒体查询: 小屏幕布局调整 */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* 小屏幕时变为单列布局 */
+    }
+    body > section#leftcol, body > section#rightcol {
+        width: 100%; /* 左右两列改为全屏宽度 */
+        margin: 0;
+    }
+    .auth-container, .logo-container {
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* 确保选择框和按钮区域的自适应 */
+.choose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.choose input, .choose button {
+    flex: 1;
+    min-width: 100px;
+    margin: 5px;
+}
+
+/* 侧边栏grid布局改进 */
+.asideL {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    width: 100%;
+    margin: 10px;
+}
